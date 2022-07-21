@@ -7,22 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1MgqfUeZ6_hG_NU_jXJ8qKhgFeP2QoJb3
 """
 
-!pip install -q numpy
-!pip install -q pandas
-!pip install -q gensim
-!pip install -q pynndescent>=0.4
-!pip install -q umap-learn
-!pip install -q hdbscan
-!pip install -q wordcloud
-!pip install -q tensorflow
-!pip install -q tensorflow_hub
-!pip install -q tensorflow_text
-!pip install -q torch
-!pip install -q sentence_transformers
-!pip install -q hnswlib
-!pip install -q joblib<1.0.0
-
-!pip install -q top2vec[sentence_transformers]
+!pip install -r requirements.txt
 
 import numpy as np
 import pandas as pd
