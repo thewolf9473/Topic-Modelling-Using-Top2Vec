@@ -42,11 +42,9 @@ with open('file2.csv','w') as csvfile:
 
 df=pd.read_csv("/content/file2.csv")
 
-df.shape
 
 docs = list(df.loc[:, "Transcript"].values)
 
-docs[0]
 
 model = Top2Vec(docs, embedding_model='universal-sentence-encoder')
 
@@ -56,7 +54,6 @@ topic_number=model.get_num_topics()
 
 topic_words, word_scores, topic_nums=model.get_topics()
 
-topic_words[2]
 
 with open('document1_file.csv','w') as csvfile:
     csvwriter = csv.writer(csvfile)
@@ -73,8 +70,6 @@ for i in range(0,topic_number):
   li_statement=model.search_documents_by_topic(i, num_docs=lk[i])
   topic_name='topic '+str(i)
   dictionary[topic_name] = li_statement[0]
-
-dictionary['topic 0']
 
 rows_to_write=['topic number','document']
 
