@@ -16,9 +16,11 @@ Top2Vec is an algorithm that detects topics present in the text and generates jo
   * Assign topics to each cluster.
  LDA is a generative statistical model while Top2Vec use an embedding approach.<br/>
  As Top2Vec depends on embedding approach it does not need any preprocessing and works on the original data for transformer models.<br/>
+ <br/>
  Output are 2 csv files 
    * First CSV return the topic number with the words related to it
    * Second csv returns the document with the corresponding topic number
+<br/>
 For further information:-https://towardsdatascience.com/how-to-perform-topic-modeling-with-top2vec-1ae9bb4e89dc
                          https://analyticsindiamag.com/how-can-the-top2vec-model-be-used-for-topic-modelling
     
